@@ -1,0 +1,12 @@
+{
+  "extends": "airbnb",
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "rules": {
+    "arrow-body-style": ["error", "always"],
+    "react/prefer-stateless-function": ["off"],
+    "react/prop-types": ["off"]
+  }
+}
