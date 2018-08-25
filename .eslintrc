@@ -6,6 +6,8 @@
   },
   "rules": {
     "arrow-body-style": ["error", "always"],
+    "prefer-destructuring": ["off"],
+    "react/destructuring-assignment": ["off"],
     "react/prefer-stateless-function": ["off"],
     "react/prop-types": ["off"]
   }

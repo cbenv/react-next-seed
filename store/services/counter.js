@@ -16,7 +16,7 @@ export const resetCount = () => {
   return (dispatch) => {
     dispatch({ type: actions.RESET_COUNT });
   };
-}
+};
 
 export default {
   incrementCount,

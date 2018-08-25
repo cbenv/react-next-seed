@@ -1,28 +1,28 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import counterService from '../store/services/counter';
+import { incrementCount, decrementCount, resetCount } from '../store/services/counter';
 
 class Counter extends Component {
   constructor(props) {
     super(props);
-    this.incrementCount = this.incrementCount.bind(this);
-    this.decrementCount = this.decrementCount.bind(this);
-    this.resetCount = this.resetCount.bind(this);
+    this.handleIncrementCount = this.handleIncrementCount.bind(this);
+    this.handleDecrementCount = this.handleDecrementCount.bind(this);
+    this.handleResetCount = this.handleResetCount.bind(this);
   }
 
-  incrementCount() {
+  handleIncrementCount() {
     const { dispatch } = this.props;
-    dispatch(counterService.incrementCount());
+    dispatch(incrementCount());
   }
 
-  decrementCount() {
+  handleDecrementCount() {
     const { dispatch } = this.props;
-    dispatch(counterService.decrementCount());
+    dispatch(decrementCount());
   }
 
-  resetCount() {
+  handleResetCount() {
     const { dispatch } = this.props;
-    dispatch(counterService.decrementCount());
+    dispatch(resetCount());
   }
 
   render() {
@@ -32,13 +32,13 @@ class Counter extends Component {
         <h1>
           {counter}
         </h1>
-        <button type="button" onClick={this.incrementCount}>
+        <button type="button" onClick={this.handleIncrementCount}>
           +1
         </button>
-        <button type="button" onClick={this.decrementCount}>
+        <button type="button" onClick={this.handleDecrementCount}>
           -1
         </button>
-        <button type="button" onClick={this.decrementCount}>
+        <button type="button" onClick={this.handleResetCount}>
           Reset
         </button>
       </div>
