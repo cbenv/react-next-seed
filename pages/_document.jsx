@@ -33,14 +33,14 @@ class CustomDocument extends Document {
       <html lang="en" dir="ltr">
         <Head>
           <title>
-            React Starter Application
+            React Next Seed
           </title>
           <meta charSet="utf-8" />
           <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no" />
           <meta name="theme-color" context={pageContext.theme.palette.primary.main} />
           <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" />
         </Head>
-        <body style={{ fontFamily: 'Roboto, "Open Sans", sans-serif', margin: 0 }}>
+        <body style={{ fontFamily: 'Roboto, sans-serif' }}>
           <Main />
           <NextScript />
         </body>
