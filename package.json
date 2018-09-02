@@ -2,7 +2,7 @@
   "name": "react-next-seed",
   "version": "1.0.0",
   "description": "React starter application with Redux as state management and MaterialUI as UI framework. Built with nextJS.",
-  "main": "pages/index.js",
+  "main": "pages/index.jsx",
   "scripts": {
     "dev": "next",
     "build": "next build",

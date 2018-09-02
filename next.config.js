@@ -1,5 +1,5 @@
 const config = {
   distDir: 'build',
-};
+}
 
-module.exports = config;
+module.exports = config

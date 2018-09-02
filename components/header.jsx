@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
-import { withStyles } from '@material-ui/core/styles';
+import React, { Component } from 'react'
+import { connect } from 'react-redux'
+import AppBar from '@material-ui/core/AppBar'
+import Toolbar from '@material-ui/core/Toolbar'
+import Typography from '@material-ui/core/Typography'
+import { withStyles } from '@material-ui/core/styles'
 
 const styles = {
   root: {
@@ -12,13 +12,13 @@ const styles = {
   flex: {
     flexGrow: 1,
   },
-};
+}
 
 class Header extends Component {
   constructor(props) {
-    super(props);
-    const { classes } = props;
-    this.classes = classes;
+    super(props)
+    const { classes } = props
+    this.classes = classes
   }
 
   render() {
@@ -32,8 +32,8 @@ class Header extends Component {
           </Toolbar>
         </AppBar>
       </div>
-    );
+    )
   }
 }
 
-export default connect()(withStyles(styles)(Header));
+export default connect()(withStyles(styles)(Header))

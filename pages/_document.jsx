@@ -1,17 +1,17 @@
-import React from 'react';
-import Document, { Head, Main, NextScript } from 'next/document';
-import flush from 'styled-jsx/server';
+import React from 'react'
+import Document, { Head, Main, NextScript } from 'next/document'
+import flush from 'styled-jsx/server'
 
 class CustomDocument extends Document {
   static getInitialProps(context) {
-    let pageContext;
+    let pageContext
     const page = context.renderPage((Component) => {
       const WrappedComponent = (props) => {
-        pageContext = props.pageContext;
-        return <Component {...props} />;
-      };
-      return WrappedComponent;
-    });
+        pageContext = props.pageContext
+        return <Component {...props} />
+      }
+      return WrappedComponent
+    })
 
     const styles = (
       <React.Fragment>
@@ -22,13 +22,13 @@ class CustomDocument extends Document {
         />
         { flush() || null }
       </React.Fragment>
-    );
+    )
 
-    return { ...page, pageContext, styles };
+    return { ...page, pageContext, styles }
   }
 
   render() {
-    const { pageContext } = this.props;
+    const { pageContext } = this.props
     return (
       <html lang="en" dir="ltr">
         <Head>
@@ -45,8 +45,8 @@ class CustomDocument extends Document {
           <NextScript />
         </body>
       </html>
-    );
+    )
   }
 }
 
-export default CustomDocument;
+export default CustomDocument
