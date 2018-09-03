@@ -1,4 +1,4 @@
-import actions from '../actions'
+import actions from './constants'
 
 export const incrementCount = () => {
   return (dispatch) => {

@@ -1,7 +1,7 @@
+import counter from './counter'
+
 const actions = {
-  INCREMENT_COUNT: 'INCREMENT_COUNT',
-  DECREMENT_COUNT: 'DECREMENT_COUNT',
-  RESET_COUNT: 'RESET_COUNT',
+  counter,
 }
 
-export default actions
+module.exports = actions
