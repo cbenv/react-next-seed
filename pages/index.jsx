@@ -5,10 +5,11 @@ import Counter from '../components/counter'
 
 class HomePage extends Component {
   render() {
+    const { store } = this.props
     return (
       <div>
-        <Header />
-        <Counter />
+        <Header store={store} />
+        <Counter store={store} />
       </div>
     )
   }

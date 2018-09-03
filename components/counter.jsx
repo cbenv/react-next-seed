@@ -28,7 +28,7 @@ class Counter extends Component {
   render() {
     const { counter } = this.props
     return (
-      <div>
+      <div className="counter">
         <h1>
           {counter}
         </h1>

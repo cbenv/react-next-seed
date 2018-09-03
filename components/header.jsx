@@ -23,7 +23,7 @@ class Header extends Component {
 
   render() {
     return (
-      <div className={this.classes.root}>
+      <div className={`header ${this.classes.root}`}>
         <AppBar position="static">
           <Toolbar>
             <Typography variant="title" color="inherit" className={this.classes.flex}>
