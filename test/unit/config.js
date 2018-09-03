@@ -18,16 +18,19 @@ const config = {
   collectCoverage: true,
 
   // An array of glob patterns indicating a set of files for which coverage information should be collected
-  // collectCoverageFrom: null,
+  collectCoverageFrom: [
+    'pages/**/*',
+    'components/**/*',
+    'store/**/*',
+  ],
 
   // The directory where Jest should output its coverage files
   coverageDirectory: 'test/tmp/coverage/unit',
 
   // An array of regexp pattern strings used to skip coverage collection
   coveragePathIgnorePatterns: [
-    '/build/',
-    '/node_modules/',
-    '/test/'
+    'pages/_app',
+    'pages/_document'
   ],
 
   // A list of reporter names that Jest uses when writing coverage reports
@@ -103,7 +106,7 @@ const config = {
   // restoreMocks: false,
 
   // The root directory that Jest should scan for tests and modules within
-  // rootDir: null,
+  rootDir: '../..',
 
   // A list of paths to directories that Jest should use to search for files in
   // roots: [
@@ -141,9 +144,8 @@ const config = {
 
   // An array of regexp pattern strings that are matched against all test paths, matched tests are skipped
   testPathIgnorePatterns: [
-    '/build/',
-    '/node_modules/',
-    '/test/unit/setup',
+    'test/unit/config',
+    'test/unit/setup',
   ],
 
   // The regexp pattern Jest uses to detect test files

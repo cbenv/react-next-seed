@@ -2,3 +2,5 @@ build
 node_modules
 *.config.*
 test/tmp
+test/unit/config.js
+test/unit/setup.js
