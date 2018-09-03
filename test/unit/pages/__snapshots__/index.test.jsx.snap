@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home Page renders to match snapshot 1`] = `
+<div>
+  <div
+    className="header Header-root-1"
+  >
+    <header
+      className="MuiPaper-root-11 MuiPaper-elevation4-17 MuiAppBar-root-3 MuiAppBar-positionStatic-7 MuiAppBar-colorPrimary-9"
+    >
+      <div
+        className="MuiToolbar-root-38 MuiToolbar-regular-40 MuiToolbar-gutters-39"
+      >
+        <h2
+          className="MuiTypography-root-42 MuiTypography-title-48 MuiTypography-colorInherit-61 Header-flex-2"
+        >
+          React Next Seed
+        </h2>
+      </div>
+    </header>
+  </div>
+  <div
+    className="counter"
+  >
+    <h1>
+      0
+    </h1>
+    <button
+      onClick={[Function]}
+      type="button"
+    >
+      +1
+    </button>
+    <button
+      onClick={[Function]}
+      type="button"
+    >
+      -1
+    </button>
+    <button
+      onClick={[Function]}
+      type="button"
+    >
+      Reset
+    </button>
+  </div>
+</div>
+`;

@@ -10,7 +10,7 @@
     "pretest": "rm -rf test/tmp",
     "test": "npm run test:lint && npm run test:unit",
     "test:lint": "eslint .",
-    "test:unit": "jest --config ./test/unit/config.js"
+    "test:unit": "jest test/unit --config ./test/unit/config.js"
   },
   "author": "Christoforus Benvenuto",
   "dependencies": {
